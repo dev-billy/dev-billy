@@ -1,0 +1,150 @@
+@import "../../scss/colors";
+.landing {
+  margin: 20px 0;
+  .highlightImage {
+    width: 100%;
+    min-height: 254px;
+    background-image: url("../../assets/highlight-image-m.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .highlightText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 1.8rem;
+      margin: 10px 0;
+      font-weight: 400;
+      line-height: 41px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+.buttonMain {
+  background-color: $primary;
+  color: #fff;
+}
+.about {
+  margin: 20px 0;
+  .myself {
+    width: 100%;
+    min-height: 391px;
+    background: url("../../assets/myself-m.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    .line {
+      width: 100%;
+      height: 1px;
+      background: $primary;
+      margin: 10px 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .buttonSecondary {
+      border: solid 1px $primary;
+      margin: 20px 0;
+      align-self: center;
+    }
+  }
+}
+.outro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .buttonMain {
+    margin: 20px 0;
+  }
+}
+button {
+  background: none;
+  border: none;
+
+  border-radius: 5px;
+  padding: 1em 1.75em;
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    margin: 0;
+    .highlightImage {
+      height: 84vh;
+      background-image: url("../../assets/highlight-image-l.png");
+      position: relative;
+    }
+    .highlightText {
+      h1 {
+        text-align: start;
+      }
+      position: absolute;
+      align-items: flex-start;
+      background: #fff;
+      width: 40%;
+      padding: 2em 1em;
+      top: 100%;
+      transform: translateY(-100%);
+    }
+  }
+  .about {
+    display: flex;
+    min-height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .myself {
+      height: auto;
+      width: 50%;
+    }
+    .aboutText {
+      height: 100%;
+      justify-content: space-between;
+      width: 50%;
+      .buttonSecondary {
+        align-self: flex-start;
+      }
+    }
+  }
+  .outro {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      width: 40%;
+    }
+    .line {
+      height: 0.5px;
+      width: 40%;
+      background-color: $primary;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing {
+    .highlightText {
+      h1 {
+        font-size: 56px;
+        line-height: 60px;
+      }
+    }
+  }
+}

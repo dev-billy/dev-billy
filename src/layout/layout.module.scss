@@ -1,5 +1,6 @@
 @import "../scss/colors";
 
+//for the nav component
 .nav {
   display: flex;
   justify-content: space-between;
@@ -25,5 +26,16 @@
     display: none;
     list-style: none;
     padding: 0;
+  }
+}
+
+//for content in layout
+.content {
+  padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 2em;
   }
 }

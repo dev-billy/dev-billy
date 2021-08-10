@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 import { withRouter } from "react-router-dom";
-
+import styles from "./layout.module.scss";
 function Layout(props) {
   const { location } = props;
   return (
@@ -8,7 +8,7 @@ function Layout(props) {
       <section>
         <Nav location={location} />
       </section>
-      <section>{props.children}</section>
+      <section className={styles.content}>{props.children}</section>
     </main>
   );
 }
