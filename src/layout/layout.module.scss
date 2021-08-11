@@ -3,6 +3,10 @@
 //for the nav component
 .nav {
   display: flex;
+  position: fixed;
+  width: 91%;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.959);
   justify-content: space-between;
   padding: 1em;
   align-items: center;
@@ -15,17 +19,70 @@
     background-repeat: no-repeat;
     background-image: url("../assets/logo-mobile.svg");
   }
-  .menu {
+  .menuOpen {
     width: 29px;
     height: 25px;
+    transition: all 0.2s;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../assets/menu-mobile.svg");
   }
+  .menuClose {
+    width: 29px;
+    height: 25px;
+    transition: all 0.2s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/menu-mobile-close.svg");
+  }
   ul {
-    display: none;
     list-style: none;
     padding: 0;
+  }
+  .menuMobile.hide {
+    display: none;
+    transition: all 0.4s;
+  }
+  .menuMobile.show {
+    display: flex;
+    transition: all 0.4s;
+    position: fixed;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.959);
+    top: 7vh;
+    left: 0;
+    padding: 1em;
+    .cta {
+      background: $primary;
+      padding: 0.25em 0.75em;
+      border-radius: 10px;
+      color: white;
+      border: solid 1px rgba(255, 255, 255, 0);
+      transition: all 0.3s;
+    }
+    .cta:hover {
+      border-bottom: none;
+      background: #fff;
+      color: $primary;
+      border: solid 1px $primary;
+    }
+    li {
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.1s;
+      }
+      a:hover {
+        cursor: pointer;
+        color: $secondary;
+        border-bottom: solid 3px $secondary;
+      }
+    }
+  }
+
+  .menuLarge {
+    display: none;
   }
   .activeLink {
     font-weight: 700;
@@ -36,12 +93,12 @@
 //for content in layout
 .content {
   padding: 1em;
-  scroll-snap-type: y mandatory;
+  margin-top: 50px;
+  //scroll-snap-type: y mandatory;
 }
 
 @media screen and (min-width: 768px) {
   .content {
-    margin-top: 50px;
     padding: 2em;
   }
   .nav {
@@ -51,7 +108,8 @@
     background-color: rgba(255, 255, 255, 0.959);
     z-index: 10;
     //margin-bottom: 1000000000px;
-    .menu {
+    .menuOpen,
+    .menuClose {
       display: none;
     }
     .logo {
@@ -59,35 +117,15 @@
       width: 142px;
       height: 50px;
     }
-    ul {
+    .menuMobile {
+      display: none;
+    }
+    .menuLarge {
       display: flex;
       width: 50%;
       justify-content: space-evenly;
       .cta {
-        background: $primary;
         padding: 0.75em 1.75em;
-        border-radius: 10px;
-        color: white;
-        border: solid 1px rgba(255, 255, 255, 0);
-        transition: all 0.3s;
-      }
-      .cta:hover {
-        border-bottom: none;
-        background: #fff;
-        color: $primary;
-        border: solid 1px $primary;
-      }
-      li {
-        a {
-          text-decoration: none;
-          color: inherit;
-          transition: all 0.1s;
-        }
-        a:hover {
-          cursor: pointer;
-          color: $secondary;
-          border-bottom: solid 3px $secondary;
-        }
       }
     }
   }
