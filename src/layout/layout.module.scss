@@ -37,11 +37,23 @@
 
 @media screen and (min-width: 768px) {
   .content {
+    margin-top: 50px;
     padding: 2em;
   }
   .nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.959);
+    z-index: 10;
+    //margin-bottom: 1000000000px;
     .menu {
       display: none;
+    }
+    .logo {
+      background-image: url("../assets/logo-desktop.svg");
+      width: 142px;
+      height: 50px;
     }
     ul {
       display: flex;
@@ -52,18 +64,24 @@
         padding: 0.75em 1.75em;
         border-radius: 10px;
         color: white;
+        border: solid 1px rgba(255, 255, 255, 0);
+        transition: all 0.3s;
       }
       .cta:hover {
         border-bottom: none;
+        background: #fff;
+        color: $primary;
+        border: solid 1px $primary;
       }
       li {
         a {
           text-decoration: none;
           color: inherit;
+          transition: all 0.1s;
         }
         a:hover {
           cursor: pointer;
-          border-bottom: solid 2px $secondary;
+          border-bottom: solid 3px $secondary;
         }
       }
     }

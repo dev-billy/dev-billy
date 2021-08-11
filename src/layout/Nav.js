@@ -8,7 +8,9 @@ function Nav(props) {
   const NavList = navlist(location);
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}></div>
+      <LinkRouter to="/">
+        <div className={styles.logo}></div>
+      </LinkRouter>
       <div className={styles.menu}></div>
       <ul>
         {NavList.map((item, index) => (
