@@ -39,4 +39,33 @@
   .content {
     padding: 2em;
   }
+  .nav {
+    .menu {
+      display: none;
+    }
+    ul {
+      display: flex;
+      width: 50%;
+      justify-content: space-evenly;
+      .cta {
+        background: $primary;
+        padding: 0.75em 1.75em;
+        border-radius: 10px;
+        color: white;
+      }
+      .cta:hover {
+        border-bottom: none;
+      }
+      li {
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        a:hover {
+          cursor: pointer;
+          border-bottom: solid 2px $secondary;
+        }
+      }
+    }
+  }
 }

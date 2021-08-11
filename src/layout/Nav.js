@@ -1,5 +1,6 @@
 import navlist from "./data/navlist";
-import { Link } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
+
 import styles from "./layout.module.scss";
 
 function Nav(props) {
@@ -12,7 +13,9 @@ function Nav(props) {
       <ul>
         {NavList.map((item, index) => (
           <li onClick={item.onClick} key={index}>
-            <Link to={item.link}>{item.text}</Link>
+            <LinkRouter to={item.link} className={item.cta ? styles.cta : ""}>
+              {item.text}
+            </LinkRouter>
           </li>
         ))}
       </ul>

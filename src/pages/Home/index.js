@@ -13,7 +13,7 @@ function HomePage() {
           <button className={styles.buttonMain}>Let's Talk {">"}</button>
         </div>
       </section>
-      <section className={styles.about}>
+      <section className={styles.about} id="about">
         <div className={styles.image}>
           <div className={styles.myself}></div>
         </div>

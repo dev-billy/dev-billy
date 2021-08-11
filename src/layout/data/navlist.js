@@ -6,9 +6,15 @@ const navlist = (location) => {
       link: "/",
     },
     {
-      text: "Page Two",
-      active: "/page02" === location.pathname,
-      link: "/page02",
+      text: "Portfolio",
+      active: "/portfolio" === location.pathname,
+      link: "/portfolio",
+    },
+    {
+      text: "Contact Me",
+      cta: true,
+      active: "/contact" === location.pathname,
+      link: "/contact",
     },
   ];
 };
