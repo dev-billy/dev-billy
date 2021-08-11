@@ -15,7 +15,12 @@ function Nav(props) {
       <ul>
         {NavList.map((item, index) => (
           <li onClick={item.onClick} key={index}>
-            <LinkRouter to={item.link} className={item.cta ? styles.cta : ""}>
+            <LinkRouter
+              to={item.link}
+              className={`${item.cta ? styles.cta : ""} ${
+                item.active ? styles.activeLink : ""
+              }`}
+            >
               {item.text}
             </LinkRouter>
           </li>
