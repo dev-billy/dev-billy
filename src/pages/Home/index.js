@@ -1,5 +1,7 @@
 import Layout from "../../layout";
 import styles from "../pagestyles/home.module.scss";
+import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 function HomePage() {
   return (
     <Layout>
@@ -10,7 +12,9 @@ function HomePage() {
             Hey, I'm Billy Patrick and I love building websites that drive
             impact.
           </h1>
-          <button className={styles.buttonMain}>Let's Talk {">"}</button>
+          <LinkScroll to="about">
+            <button className={styles.buttonAbout}>About Me {">"}</button>
+          </LinkScroll>
         </div>
       </section>
       <section className={styles.about} id="about">
@@ -28,14 +32,18 @@ function HomePage() {
             good music and basketball, you could reach out to me if you want to
             have a chat on these.
           </p>
-          <button className={styles.buttonSecondary}>View Portfolio</button>
+          <LinkRouter to="/portfolio">
+            <button className={styles.buttonSecondary}>View Portfolio</button>
+          </LinkRouter>
           <div className={styles.line}></div>
         </div>
       </section>
       <section className={styles.outro}>
         <h1>Interested In Working Together?</h1>
         <div className={styles.line}></div>
-        <button className={styles.buttonMain}>Contact Me</button>
+        <LinkRouter to="/contact">
+          <button className={styles.buttonMain}>Contact Me</button>
+        </LinkRouter>
       </section>
     </Layout>
   );

@@ -20,12 +20,20 @@
       letter-spacing: 0em;
       text-align: center;
     }
+    .buttonAbout {
+      background-color: $secondary;
+      color: #fff;
+      transition: all 0.8s;
+      border: solid 1px;
+    }
+    .buttonAbout:hover {
+      background-color: #fff;
+      color: $secondary;
+      border: solid 1px $secondary;
+    }
   }
 }
-.buttonMain {
-  background-color: $primary;
-  color: #fff;
-}
+
 .about {
   margin: 20px 0;
   .image {
@@ -59,6 +67,11 @@
     .buttonSecondary {
       border: solid 1px $primary;
       margin: 20px 0;
+      transition: all 0.3s;
+    }
+    .buttonSecondary:hover {
+      background-color: $primary;
+      color: #fff;
     }
   }
 }
@@ -75,15 +88,26 @@
     text-align: center;
   }
   .buttonMain {
+    background-color: $primary;
+    color: #fff;
     margin: 20px 0;
+    border: solid 1px;
+    transition: all 0.3s;
+  }
+  .buttonMain:hover {
+    background-color: #fff;
+    color: $primary;
+    border: solid 1px $primary;
   }
 }
 button {
   background: none;
   border: none;
-
   border-radius: 5px;
   padding: 1em 1.75em;
+}
+button:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,6 +187,12 @@ button {
       p {
         font-size: 1.2rem;
       }
+    }
+  }
+  .outro {
+    h1 {
+      font-size: 46px;
+      line-height: 60px;
     }
   }
   button {
