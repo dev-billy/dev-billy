@@ -28,17 +28,21 @@
 }
 .about {
   margin: 20px 0;
-  .myself {
+  .image {
     width: 100%;
-    min-height: 391px;
-    background: url("../../assets/myself-m.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    .myself {
+      width: 100%;
+      height: 342px;
+      background: url("../../assets/myself-m.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
   .aboutText {
     display: flex;
     flex-direction: column;
+    align-items: center;
     .line {
       width: 100%;
       height: 1px;
@@ -55,7 +59,6 @@
     .buttonSecondary {
       border: solid 1px $primary;
       margin: 20px 0;
-      align-self: center;
     }
   }
 }
@@ -106,21 +109,18 @@ button {
   }
   .about {
     display: flex;
-    min-height: 80vh;
-    justify-content: space-between;
+    min-height: 90vh;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    .myself {
-      height: auto;
-      width: 50%;
+    .image {
+      width: 40%;
     }
     .aboutText {
       height: 100%;
-      justify-content: space-between;
-      width: 50%;
-      .buttonSecondary {
-        align-self: flex-start;
-      }
+      justify-content: center;
+      align-items: flex-start;
+      width: 40%;
     }
   }
   .outro {
@@ -146,5 +146,27 @@ button {
         line-height: 60px;
       }
     }
+  }
+  .about {
+    .image {
+      .myself {
+        height: 500px;
+        background-image: url("../../assets/myself-l.png");
+        background-size: contain;
+      }
+    }
+    .aboutText {
+      height: 500px;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  button {
+    padding: 1.2em 3.75em;
+    font-size: 1rem;
   }
 }

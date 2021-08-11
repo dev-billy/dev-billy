@@ -32,6 +32,7 @@
 //for content in layout
 .content {
   padding: 1em;
+  scroll-snap-type: y mandatory;
 }
 
 @media screen and (min-width: 768px) {

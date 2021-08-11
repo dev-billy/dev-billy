@@ -14,7 +14,9 @@ function HomePage() {
         </div>
       </section>
       <section className={styles.about}>
-        <div className={styles.myself}></div>
+        <div className={styles.image}>
+          <div className={styles.myself}></div>
+        </div>
         <div className={styles.aboutText}>
           <div className={styles.line}></div>
           <h2>About Me</h2>
