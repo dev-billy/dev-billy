@@ -24,7 +24,7 @@ function Nav(props) {
         className={`${styles.menuMobile} ${open ? styles.show : styles.hide}`}
       >
         {NavList.map((item, index) => (
-          <li onClick={item.onClick} key={index}>
+          <li key={index}>
             <LinkRouter
               to={item.link}
               className={`${item.cta ? styles.cta : ""} ${
@@ -38,7 +38,7 @@ function Nav(props) {
       </ul>
       <ul className={styles.menuLarge}>
         {NavList.map((item, index) => (
-          <li onClick={item.onClick} key={index}>
+          <li key={index}>
             <LinkRouter
               to={item.link}
               className={`${item.cta ? styles.cta : ""} ${
