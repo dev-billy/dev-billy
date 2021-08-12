@@ -1,6 +1,7 @@
 import HomePage from "./pages/Home";
 import NotFound from "./pages/404";
-import PageTwo from "./pages/PageTwo";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 const routes = [
   {
@@ -9,9 +10,14 @@ const routes = [
     component: HomePage,
   },
   {
-    path: "/page02",
+    path: "/portfolio",
     exact: true,
-    component: PageTwo,
+    component: Portfolio,
+  },
+  {
+    path: "/contact",
+    exact: true,
+    component: Contact,
   },
   {
     path: "*",
