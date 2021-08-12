@@ -1,0 +1,76 @@
+@import "../../scss/colors";
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 4px 7px 0px #c4c4c44a;
+  h2 {
+    font-size: 1.2rem;
+    line-height: 22px;
+  }
+}
+.textContent {
+  .form {
+    display: flex;
+    flex-direction: column;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 14px;
+      }
+      input,
+      textarea {
+        margin: 10px 0;
+        padding: 1em;
+        border: solid 0.25px $secondary;
+        border-radius: 5px;
+        // outline: none;
+        resize: none;
+        font-family: "Open Sans", sans-serif;
+      }
+      input:focus,
+      textarea:focus {
+        outline-color: $primary;
+        border-color: $primary;
+      }
+    }
+    .sendBtn {
+      margin-top: 10px;
+      background-color: $primary;
+      color: #fff;
+      align-self: flex-end;
+      border: solid 1px rgba(255, 255, 255, 0);
+      transition: all 0.3s;
+    }
+    .sendBtn:hover {
+      color: $primary;
+      background-color: white;
+      border: solid 1px $primary;
+    }
+  }
+}
+.image {
+  height: 155px;
+  margin-top: 20px;
+  background-image: url("../../assets/contact-illustration.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 3em;
+    justify-content: space-between;
+  }
+  .textContent {
+    width: 40%;
+  }
+  .image {
+    height: auto;
+    width: 40%;
+  }
+}
