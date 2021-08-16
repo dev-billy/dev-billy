@@ -45,6 +45,7 @@
           width: fit-content;
           border-radius: 27px;
           margin-right: 5px;
+          transition: all 0.5s;
         }
       }
       .buttons {
@@ -52,20 +53,27 @@
 
         button {
           padding: 0.75em 1em;
+          transition: all 0.5s;
         }
         .primaryBtn {
           background: $primary;
           color: #fff;
           margin-right: 20px;
+          border: solid 1px rgba(255, 255, 255, 0);
+          transition: all 0.5s;
         }
         .secondaryBtn {
           border: solid 1px $secondary;
+          transition: all 0.5s;
         }
       }
     }
   }
 
   .textContent {
+    h2 {
+      font-size: 1.75rem;
+    }
     p {
       font-size: 0.85rem;
       line-height: 25px;
@@ -83,6 +91,22 @@
       }
       .highlightText {
         width: 50%;
+        .primaryBtn:hover {
+          border: solid 1px $primary;
+          background: #fff;
+          color: $primary;
+        }
+        .secondaryBtn:hover {
+          border: solid 1px $primary;
+          color: $primary;
+        }
+        ul {
+          li:hover {
+            cursor: pointer;
+            background: $secondary;
+            color: #fff;
+          }
+        }
       }
     }
   }
