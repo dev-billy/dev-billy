@@ -1,57 +1,89 @@
 @import "../../scss/colors";
 .backBtn {
-  padding: 0.75em 1em;
+  padding: 0.75em 0em;
   margin: 20px 0;
-  border: solid 1px $secondary;
+  font-weight: 700;
   color: $secondary;
   span {
     font-family: "Fira Code", monospace;
   }
 }
 .project {
-  .highlightImg {
-    width: 100%;
-    height: 40vh;
-    background: #c4c4c44a;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
-  }
-  .textContent {
-    h1 {
-      font-size: 2rem;
-      margin: 0;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    .highlightImg {
+      width: 100%;
+      height: 40vh;
+      background: #c4c4c44a;
+      background-size: cover;
+      margin-right: 50px;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
+    .highlightText {
+      width: 100%;
+      min-height: 35vh;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      li {
-        font-size: 12px;
-        border: solid 1px $secondary;
-        padding: 0.5em 1em;
-        width: fit-content;
-        border-radius: 27px;
-        margin-right: 5px;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        li {
+          font-size: 12px;
+          border: solid 1px $secondary;
+          padding: 0.5em 1em;
+          width: fit-content;
+          border-radius: 27px;
+          margin-right: 5px;
+        }
+      }
+      .buttons {
+        display: flex;
+
+        button {
+          padding: 0.75em 1em;
+        }
+        .primaryBtn {
+          background: $primary;
+          color: #fff;
+          margin-right: 20px;
+        }
+        .secondaryBtn {
+          border: solid 1px $secondary;
+        }
       }
     }
+  }
+
+  .textContent {
     p {
       font-size: 0.85rem;
       line-height: 25px;
     }
   }
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    .primaryBtn {
-      background: $primary;
-      color: #fff;
-    }
-    .secondaryBtn {
-      border: solid 1px $secondary;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    .intro {
+      flex-direction: row;
+      .highlightImg {
+        width: 40%;
+        height: auto;
+      }
+      .highlightText {
+        width: 50%;
+      }
     }
   }
 }

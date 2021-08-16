@@ -11,28 +11,33 @@ function Project() {
       <Layout>
         <Link to="/portfolio">
           <button className={styles.backBtn}>
-            {" "}
             <span>{"<-"}</span> Project List
           </button>
         </Link>
         <section className={styles.project}>
-          <div
-            className={styles.highlightImg}
-            style={{ backgroundImage: `url(${projectData.image})` }}
-          ></div>
+          <article className={styles.intro}>
+            <aside
+              className={styles.highlightImg}
+              style={{ backgroundImage: `url(${projectData.image})` }}
+            ></aside>
+            <aside className={styles.highlightText}>
+              <h1>{projectData.title}</h1>
+              <p>{projectData.shortDescription}</p>
+              <ul>
+                {projectData.techStack.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+              <div className={styles.buttons}>
+                <button className={styles.primaryBtn}>Visit Demo</button>
+                <button className={styles.secondaryBtn}>View Source</button>
+              </div>
+            </aside>
+          </article>
           <article className={styles.textContent}>
-            <h1>{projectData.title}</h1>
-            <ul>
-              {projectData.techStack.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+            <h2>Project Background</h2>
             <p>{projectData.story}</p>
           </article>
-          <div className={styles.buttons}>
-            <button className={styles.primaryBtn}>Visit Demo</button>
-            <button className={styles.secondaryBtn}>View Source</button>
-          </div>
         </section>
       </Layout>
     );
