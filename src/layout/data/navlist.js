@@ -7,7 +7,9 @@ const navlist = (location) => {
     },
     {
       text: "Portfolio",
-      active: "/portfolio" === location.pathname,
+      active:
+        "/portfolio" === location.pathname ||
+        location.pathname.startsWith("/portfolio/project"),
       link: "/portfolio",
     },
     {

@@ -1,6 +1,7 @@
 import Layout from "../../layout";
 import styles from "../pagestyles/portfolio.module.scss";
 import projectList from "../../data/projects";
+import { Link } from "react-router-dom";
 function Portfolio() {
   return (
     <Layout>
@@ -31,7 +32,9 @@ function Portfolio() {
                   <li key={index}>{techItem}</li>
                 ))}
               </ul>
-              <button className={styles.readMore}>Read More</button>
+              <Link to={`/portfolio/project/${project.id}`}>
+                <button className={styles.readMore}>Read More</button>
+              </Link>
             </div>
           </div>
         ))}

@@ -2,6 +2,7 @@ import HomePage from "./pages/Home";
 import NotFound from "./pages/404";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Project from "./pages/Portfolio/Project";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/contact",
     exact: true,
     component: Contact,
+  },
+  {
+    path: "/portfolio/project/:id",
+    exact: true,
+    component: Project,
   },
   {
     path: "*",
