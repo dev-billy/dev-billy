@@ -15,7 +15,12 @@ function Portfolio() {
       <section className={styles.projectList}>
         {projectList.map((project) => (
           <div className={styles.project} key={project.id}>
-            <div className={styles.highlightImg}></div>
+            <div
+              className={styles.highlightImg}
+              style={{
+                backgroundImage: project.image && `url(${project.image})`,
+              }}
+            ></div>
             <div className={styles.textContent}>
               <div className={styles.titles}>
                 <h2>{project.title}</h2>
