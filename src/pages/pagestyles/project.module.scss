@@ -1,0 +1,57 @@
+@import "../../scss/colors";
+.backBtn {
+  padding: 0.75em 1em;
+  margin: 20px 0;
+  border: solid 1px $secondary;
+  color: $secondary;
+  span {
+    font-family: "Fira Code", monospace;
+  }
+}
+.project {
+  .highlightImg {
+    width: 100%;
+    height: 40vh;
+    background: #c4c4c44a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  .textContent {
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      li {
+        font-size: 12px;
+        border: solid 1px $secondary;
+        padding: 0.5em 1em;
+        width: fit-content;
+        border-radius: 27px;
+        margin-right: 5px;
+      }
+    }
+    p {
+      font-size: 0.85rem;
+      line-height: 25px;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    .primaryBtn {
+      background: $primary;
+      color: #fff;
+    }
+    .secondaryBtn {
+      border: solid 1px $secondary;
+    }
+  }
+}
