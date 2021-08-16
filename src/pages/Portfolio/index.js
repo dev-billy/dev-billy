@@ -23,10 +23,8 @@ function Portfolio() {
               }}
             ></div>
             <div className={styles.textContent}>
-              <div className={styles.titles}>
-                <h2>{project.title}</h2>
-                <p>{project.shortDescription}</p>
-              </div>
+              <h2>{project.title}</h2>
+              <p>{project.shortDescription}</p>
               <ul>
                 {project.techStack.map((techItem, index) => (
                   <li key={index}>{techItem}</li>
