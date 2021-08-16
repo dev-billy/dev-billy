@@ -1,5 +1,6 @@
 import Layout from "../../layout";
 import styles from "../pagestyles/portfolio.module.scss";
+import projectList from "../../data/projects";
 function Portfolio() {
   return (
     <Layout>
@@ -12,40 +13,23 @@ function Portfolio() {
       </section>
 
       <section className={styles.projectList}>
-        <div className={styles.project}>
-          <div className={styles.highlightImg}></div>
-          <div className={styles.textContent}>
-            <div className={styles.titles}>
-              <h2>Project Title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Et.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et.
-              </p>
+        {projectList.map((project) => (
+          <div className={styles.project} key={project.id}>
+            <div className={styles.highlightImg}></div>
+            <div className={styles.textContent}>
+              <div className={styles.titles}>
+                <h2>{project.title}</h2>
+                <p>{project.shortDescription}</p>
+              </div>
+              <ul>
+                {project.techStack.map((techItem, index) => (
+                  <li key={index}>{techItem}</li>
+                ))}
+              </ul>
+              <button className={styles.readMore}>Read More</button>
             </div>
-            <ul>
-              <li>Figma</li>
-              <li>Figma</li>
-            </ul>
-            <button className={styles.readMore}>Read More</button>
           </div>
-        </div>
-        <div className={styles.project}>
-          <div className={styles.highlightImg}></div>
-          <div className={styles.textContent}>
-            <div className={styles.titles}>
-              <h2>Project Title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Et.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et.
-              </p>
-            </div>
-            <ul>
-              <li>Figma</li>
-              <li>Figma</li>
-            </ul>
-            <button className={styles.readMore}>Read More</button>
-          </div>
-        </div>
+        ))}
       </section>
     </Layout>
   );
