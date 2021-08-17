@@ -1,8 +1,12 @@
+import bookmark from "./images/bookmark.svg";
+import thoughts from "./images/thoughts.svg";
+import connect from "./images/connect.svg";
+
 import devBillySite from "./images/dev-billy.png";
 import designSystem from "./images/design-system.png";
-import bookmark from "./images/bookmark.svg";
 import room from "./images/room-homepage.png";
-import thoughts from "./images/thoughts.svg";
+import ipTracker from "./images/ip-address-tracker.png";
+
 let projectList = [
   {
     id: 1,
@@ -45,6 +49,18 @@ let projectList = [
     demoLink: "https://room-homepage-dev-billy.vercel.app/",
     sourceLink: "https://github.com/dev-billy/room-homepage",
     outroIllustrations: [thoughts],
+  },
+  {
+    id: 4,
+    title: "IP address Tracker",
+    shortDescription:
+      "An IP address tracker that provides the information from an IP address or a domain name, the information is provided using the ipify and displaying the coordinates on a map",
+    techStack: ["HTML5", "SCSS", "JavaScript", "API", "Leaflet", "Mapbox"],
+    story: "ipTracker.md",
+    image: ipTracker,
+    demoLink: "https://ip-address-tracker-silk.vercel.app/",
+    sourceLink: "https://github.com/dev-billy/ip-address-tracker",
+    outroIllustrations: [connect],
   },
 ];
 
