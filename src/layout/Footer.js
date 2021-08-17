@@ -23,10 +23,14 @@ function Footer(props) {
         </ul>
       </div>
       <div className={styles.socials}>
-        <a href="https://github.com/dev-billy">
+        <a href="https://github.com/dev-billy" target="_blank" rel="noreferrer">
           <div className={styles.github}></div>
         </a>
-        <a href="https://twitter.com/itsdevbilly">
+        <a
+          href="https://twitter.com/itsdevbilly"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className={styles.twitter}></div>
         </a>
       </div>

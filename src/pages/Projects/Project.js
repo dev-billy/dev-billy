@@ -45,8 +45,16 @@ function Project() {
                 ))}
               </ul>
               <div className={styles.buttons}>
-                <button className={styles.primaryBtn}>Visit Demo</button>
-                <button className={styles.secondaryBtn}>View Source</button>
+                <a href={projectData.demoLink} target="_blank" rel="noreferrer">
+                  <button className={styles.primaryBtn}>Visit Demo</button>
+                </a>
+                <a
+                  href={projectData.sourceLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className={styles.secondaryBtn}>View Source</button>
+                </a>
               </div>
             </article>
           </div>

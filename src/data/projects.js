@@ -9,7 +9,7 @@ let projectList = [
     story: "devbilly.md",
     techStack: ["HTML5", "SCSS", "ReactJS", "Figma", "Vercel"],
     image: devBillySite,
-    demoLink: "devbilly.com",
+    demoLink: "https://devbilly.com",
     sourceLink: "https://github.com/dev-billy/dev-billy",
     outroIllustrations: [bookmark],
   },
