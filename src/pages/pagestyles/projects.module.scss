@@ -28,6 +28,7 @@
       height: 20vh;
       background-color: #c4c4c44a;
       background-size: cover;
+      background-position-x: center;
       background-repeat: no-repeat;
     }
     .textContent {
@@ -54,6 +55,7 @@
         border: solid 1px $secondary;
         padding: 0.5em 1em;
         width: fit-content;
+        margin-bottom: 5px;
         border-radius: 27px;
         margin-right: 5px;
       }
@@ -77,6 +79,7 @@
       .highlightImg {
         width: 45%;
         min-height: 300px;
+        background-position-x: left;
       }
       .textContent {
         width: 45%;
