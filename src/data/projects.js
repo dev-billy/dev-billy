@@ -9,7 +9,7 @@ import ipTracker from "./images/ip-address-tracker.png";
 
 let projectList = [
   {
-    id: 1,
+    id: 0,
     title: "Dev-Billy Website",
     shortDescription:
       "This is my website project built to showcase my skills and journey as a frontend developer. It was an interesting journey moving from design to code to deployment.",
@@ -21,7 +21,7 @@ let projectList = [
     outroIllustrations: [bookmark],
   },
   {
-    id: 2,
+    id: 1,
     title: "Design System",
     shortDescription:
       "This is a react project, mainly focused on creating reusable react components. This design system was created to test my react skills and look on reusability concepts on a design system level.",
@@ -33,7 +33,7 @@ let projectList = [
     outroIllustrations: [bookmark],
   },
   {
-    id: 3,
+    id: 2,
     title: "Room Homepage",
     shortDescription:
       "Landing page for a hypothetical furniture store, Built to challenge my css layout skills",
@@ -51,7 +51,7 @@ let projectList = [
     outroIllustrations: [thoughts],
   },
   {
-    id: 4,
+    id: 3,
     title: "IP address Tracker",
     shortDescription:
       "An IP address tracker that provides the information from an IP address or a domain name, the information is provided using the ipify and displaying the coordinates on a map",
