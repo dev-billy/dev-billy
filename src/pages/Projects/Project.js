@@ -30,12 +30,12 @@ function Project() {
           </button>
         </Link>
         <section className={styles.project}>
-          <article className={styles.intro}>
+          <div className={styles.intro}>
             <aside
               className={styles.highlightImg}
               style={{ backgroundImage: `url(${projectData.image})` }}
             ></aside>
-            <aside className={styles.highlightText}>
+            <article className={styles.highlightText}>
               <h1>{projectData.title}</h1>
               <p>{projectData.shortDescription}</p>
               <ul>
@@ -47,13 +47,25 @@ function Project() {
                 <button className={styles.primaryBtn}>Visit Demo</button>
                 <button className={styles.secondaryBtn}>View Source</button>
               </div>
-            </aside>
-          </article>
-          <article className={styles.textContent}>
-            <h2>Project Background</h2>
-            {/* <p>{projectData.story}</p> */}
-            <ReactMarkdown children={post} />
-          </article>
+            </article>
+          </div>
+          <div className={styles.moreDetails}>
+            <article className={styles.textContent}>
+              <h2>Project Background</h2>
+              <ReactMarkdown children={post} />
+            </article>
+            {projectData.outroIllustrations && (
+              <aside className={styles.illustrations}>
+                {projectData.outroIllustrations.map((preview, index) => (
+                  <div
+                    key={index}
+                    className={styles.illustration}
+                    style={{ backgroundImage: `url(${preview})` }}
+                  ></div>
+                ))}
+              </aside>
+            )}
+          </div>
         </section>
       </Layout>
     );

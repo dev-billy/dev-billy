@@ -1,4 +1,5 @@
 import devBillySite from "./images/dev-billy.png";
+import bookmark from "./images/bookmark.svg";
 let projectList = [
   {
     id: 1,
@@ -10,6 +11,7 @@ let projectList = [
     image: devBillySite,
     demoLink: "devbilly.com",
     sourceLink: "https://github.com/dev-billy/dev-billy",
+    outroIllustrations: [bookmark],
   },
 ];
 
