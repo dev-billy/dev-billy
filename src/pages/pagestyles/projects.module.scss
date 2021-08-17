@@ -73,13 +73,13 @@
   .projectList {
     .project {
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       .highlightImg {
-        width: 40%;
+        width: 45%;
         min-height: 300px;
       }
       .textContent {
-        width: 50%;
+        width: 45%;
         height: auto;
         justify-content: space-evenly;
       }
