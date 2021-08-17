@@ -1,8 +1,8 @@
 import HomePage from "./pages/Home";
 import NotFound from "./pages/404";
-import Portfolio from "./pages/Portfolio";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Project from "./pages/Portfolio/Project";
+import Project from "./pages/Projects/Project";
 
 const routes = [
   {
@@ -11,9 +11,9 @@ const routes = [
     component: HomePage,
   },
   {
-    path: "/portfolio",
+    path: "/projects",
     exact: true,
-    component: Portfolio,
+    component: Projects,
   },
   {
     path: "/contact",
@@ -21,7 +21,7 @@ const routes = [
     component: Contact,
   },
   {
-    path: "/portfolio/project/:id",
+    path: "/projects/:id",
     exact: true,
     component: Project,
   },

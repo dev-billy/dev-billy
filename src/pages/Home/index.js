@@ -13,7 +13,12 @@ function HomePage() {
             impact.
           </h1>
           <LinkScroll to="about">
-            <button className={styles.buttonAbout}>About Me {">"}</button>
+            <button className={styles.buttonAbout}>
+              About Me{" "}
+              <span style={{ fontFamily: "'Fira Code', monospace" }}>
+                {"->"}
+              </span>
+            </button>
           </LinkScroll>
         </div>
       </section>
@@ -30,8 +35,8 @@ function HomePage() {
             good music and basketball, you could reach out to me if you want to
             have a chat on these.
           </p>
-          <LinkRouter to="/portfolio">
-            <button className={styles.buttonSecondary}>View Portfolio</button>
+          <LinkRouter to="/projects">
+            <button className={styles.buttonSecondary}>View Projects</button>
           </LinkRouter>
           <div className={styles.line}></div>
         </div>

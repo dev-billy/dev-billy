@@ -1,5 +1,5 @@
 import { useState } from "react";
-import navlist from "./data/navlist";
+import navlist from "../data/navlist";
 import { Link as LinkRouter } from "react-router-dom";
 
 import styles from "./layout.module.scss";

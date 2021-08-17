@@ -1,8 +1,8 @@
 import Layout from "../../layout";
-import styles from "../pagestyles/portfolio.module.scss";
+import styles from "../pagestyles/projects.module.scss";
 import projectList from "../../data/projects";
 import { Link } from "react-router-dom";
-function Portfolio() {
+function Projects() {
   return (
     <Layout>
       <section className={styles.intro}>
@@ -30,7 +30,7 @@ function Portfolio() {
                   <li key={index}>{techItem}</li>
                 ))}
               </ul>
-              <Link to={`/portfolio/project/${project.id}`}>
+              <Link to={`/projects/${project.id}`}>
                 <button className={styles.readMore}>Read More</button>
               </Link>
             </div>
@@ -41,4 +41,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;

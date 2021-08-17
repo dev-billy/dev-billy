@@ -9,7 +9,7 @@ function Project() {
   if (projectData) {
     return (
       <Layout>
-        <Link to="/portfolio">
+        <Link to="/projects">
           <button className={styles.backBtn}>
             <span>{"<-"}</span> Project List
           </button>

@@ -6,11 +6,11 @@ const navlist = (location) => {
       link: "/",
     },
     {
-      text: "Portfolio",
+      text: "Projects",
       active:
-        "/portfolio" === location.pathname ||
-        location.pathname.startsWith("/portfolio/project"),
-      link: "/portfolio",
+        "/projects" === location.pathname ||
+        location.pathname.startsWith("/projects"),
+      link: "/projects",
     },
     {
       text: "Contact Me",

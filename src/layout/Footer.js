@@ -1,5 +1,5 @@
 import styles from "./layout.module.scss";
-import navlist from "./data/navlist";
+import navlist from "../data/navlist";
 import { Link as LinkRouter } from "react-router-dom";
 function Footer(props) {
   const { location } = props;
