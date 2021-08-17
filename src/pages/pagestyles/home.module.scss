@@ -166,6 +166,21 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .landing {
+    .highlightImage {
+      height: 50vh;
+    }
+    .highlightText {
+      width: 50%;
+      top: 60%;
+    }
+  }
+  .about {
+    min-height: 50vh;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .landing {
     .highlightText {
@@ -177,7 +192,7 @@ button:hover {
     }
   }
   .about {
-    min-height: 100vh;
+    min-height: 60vh;
     .myself {
       width: 50%;
       background-image: url("../../assets/myself-l.png");
