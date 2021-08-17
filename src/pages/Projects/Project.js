@@ -1,11 +1,26 @@
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Layout from "../../layout";
 import projectList from "../../data/projects";
 import NotFound from "../404";
 import styles from "../pagestyles/project.module.scss";
+import ReactMarkdown from "react-markdown";
 function Project() {
   let { id } = useParams();
+  const [post, setPost] = useState("");
   let projectData = projectList.filter((project) => project.id === +id)[0];
+  useEffect(() => {
+    if (projectData) {
+      import(`../../data/markdown/${projectData.story}`)
+        .then((res) => {
+          fetch(res.default)
+            .then((res) => res.text())
+            .then((res) => setPost(res))
+            .catch((err) => console.log(err));
+        })
+        .catch((err) => console.log(err));
+    }
+  });
   if (projectData) {
     return (
       <Layout>
@@ -36,7 +51,8 @@ function Project() {
           </article>
           <article className={styles.textContent}>
             <h2>Project Background</h2>
-            <p>{projectData.story}</p>
+            {/* <p>{projectData.story}</p> */}
+            <ReactMarkdown children={post} />
           </article>
         </section>
       </Layout>

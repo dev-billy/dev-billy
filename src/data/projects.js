@@ -1,23 +1,18 @@
-import project1Image from "./images/dev-billy.png";
+import devBillySite from "./images/dev-billy.png";
 let projectList = [
   {
     id: 1,
-    title: "Project 01",
+    title: "Dev-Billy Website",
     shortDescription:
-      "This project one, just testing if i can retrieve this data in the Project list page, give me a minute i will update the story",
-    story: "This was a challenge /......./....././/////......",
-    techStack: ["figma", "figma", "react"],
-    image: project1Image,
-  },
-  {
-    id: 2,
-    title: "Project 02",
-    shortDescription:
-      "This project Two, just testing if i can retrieve this data in the Project list page, give me a minute i will update the story",
-    story: "This was a challenge /......./....././/////......",
-    techStack: ["figma", "figma", "react"],
-    image: project1Image,
+      "This is my website project built to showcase my skills and journey as a frontend developer. It was an interesting journey moving from design to code to deployment.",
+    story: "devbilly.md",
+    techStack: ["HTML5", "SCSS", "ReactJS", "Figma", "Vercel"],
+    image: devBillySite,
+    demoLink: "devbilly.com",
+    sourceLink: "https://github.com/dev-billy/dev-billy",
   },
 ];
 
 export default projectList;
+
+//"My website comes from working on projects on frontendmentor and decided it was time to start building a site where i could showcase all the projects i have built and document my journey. \n I started off working this website to try and recreate a design i saw on frontend mentor by designing it on figma and the rest is what we have here. \n I have previously struggled in getting on a personal website that i fully like but"
