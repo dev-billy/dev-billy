@@ -5,6 +5,7 @@ import projectList from "../../data/projects";
 import NotFound from "../404";
 import styles from "../pagestyles/project.module.scss";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 function Project() {
   let { id } = useParams();
   const [post, setPost] = useState("");
@@ -52,7 +53,7 @@ function Project() {
           <div className={styles.moreDetails}>
             <article className={styles.textContent}>
               <h2>Project Background</h2>
-              <ReactMarkdown children={post} />
+              <ReactMarkdown children={post} remarkPlugins={[remarkGfm]} />
             </article>
             {projectData.outroIllustrations && (
               <aside className={styles.illustrations}>
