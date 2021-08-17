@@ -73,6 +73,12 @@
   }
 
   .textContent {
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
     h2 {
       font-size: 1.75rem;
       margin: 0;
@@ -80,6 +86,11 @@
     p {
       margin-top: 0;
       line-height: 25px;
+    }
+    ul {
+      margin-top: 5px;
+      list-style: none;
+      padding-left: 0;
     }
     hr {
       background-color: $secondary;

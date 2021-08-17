@@ -1,4 +1,5 @@
 import devBillySite from "./images/dev-billy.png";
+import designSystem from "./images/design-system.png";
 import bookmark from "./images/bookmark.svg";
 let projectList = [
   {
@@ -13,8 +14,18 @@ let projectList = [
     sourceLink: "https://github.com/dev-billy/dev-billy",
     outroIllustrations: [bookmark],
   },
+  {
+    id: 2,
+    title: "Design System",
+    shortDescription:
+      "This is a react project, mainly focused on creating reusable react components. This design system was created to test my react skills and look on reusability concepts on a design system level.",
+    story: "designSystem.md",
+    techStack: ["HTML5", "SCSS", "ReactJS", "Vercel"],
+    image: designSystem,
+    demoLink: "https://design-system-liart.vercel.app/",
+    sourceLink: "https://github.com/dev-billy/design-system",
+    outroIllustrations: [bookmark],
+  },
 ];
 
 export default projectList;
-
-//"My website comes from working on projects on frontendmentor and decided it was time to start building a site where i could showcase all the projects i have built and document my journey. \n I started off working this website to try and recreate a design i saw on frontend mentor by designing it on figma and the rest is what we have here. \n I have previously struggled in getting on a personal website that i fully like but"
