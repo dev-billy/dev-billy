@@ -8,7 +8,7 @@ let projectList = [
     shortDescription:
       "This is my website project built to showcase my skills and journey as a frontend developer. It was an interesting journey moving from design to code to deployment.",
     story: "devbilly.md",
-    techStack: ["HTML5", "SCSS", "ReactJS", "Figma", "Vercel"],
+    techStack: ["HTML5", "SCSS", "ReactJS", "Figma", "Vercel", "Markdown"],
     image: devBillySite,
     demoLink: "https://devbilly.com",
     sourceLink: "https://github.com/dev-billy/dev-billy",

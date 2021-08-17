@@ -2,8 +2,6 @@ Started off as a simple buttons design system challenge, but made it more reusab
 
 This Journey helped me learn better, and hone my react skills and design skills to build something that is reusable and scalable.
 
-"Just get started!"
-
 ### Features
 
 - [x] Buttons
