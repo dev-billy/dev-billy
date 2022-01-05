@@ -20,7 +20,7 @@
  </p>
 
 <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=dev-billy&count_private=true&show_icons=true" alt="Dev Billy" height="220"/> </p>
+    <img src="https://github-readme-stats.vercel.app/api?username=dev-billy&count_private=true&show_icons=true&theme=dracula" alt="Dev Billy" height="220"/> </p>
 <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-billy&layout=compact" alt="Dev Billy" height="225" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-billy&layout=compact&theme=dracula" alt="Dev Billy" height="225" />
 </p>
