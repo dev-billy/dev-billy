@@ -1,29 +1,26 @@
-# DevBilly Website
+<h1 align="center">Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">, I'm Billy Patrick</h1>
 
-## Overview
+<h3 align="center">Frontend Developer.</h3>
 
-This repository contains the source code of my website [devbilly.com](devbilly.com)
+- 👨🏾‍💻 Currently working on Web and Android projects
+- ✌🏾 Looking forward to collaborating with other Frontend Developers and Android enthusiasts
+- 📫 I'm available to answer your android and web related questions.
+  
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+ <p align="center"> 
+ <a href="https://twitter.com/itsdevbilly">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />    
+  </a>&nbsp;&nbsp;
+ <a href="https://www.linkedin.com/in/itsdevbilly">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>&nbsp;&nbsp;
+  <a href="billypatrick767@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>&nbsp;&nbsp;
+ </p>
 
-## Built With
-
-- [ReactJS](https://reactjs.org/)
-
-## To view locally
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```
- $ git clone https://github.com/dev-billy/dev-billy
-
- $ npm install
-
- $ npm start
-```
-
-## Contact
-
-- Website [devbilly.com](https://{devbilly.com})
-- GitHub [@dev-billy](https://{github.com/dev-billy})
-- Twitter [@itsdevbilly](https://{twitter.com/itsdevbilly})
+<p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=dev-billy&count_private=true&show_icons=true" alt="Dev Billy" height="220"/> </p>
+<p align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-billy&layout=compact" alt="Dev Billy" height="225" />
+</p>
