@@ -11,8 +11,6 @@ For sometime now i have been doing Android and I'm slowly transitioning to compl
 * 🌍  I'm based in Arusha, Tanzania
 * 🖥️  [dev-billy](https://itsbilly.dev)
 * ✉️  You can contact me at [billypatrick767@gmail.com](mailto:billypatrick767@gmail.com)
-* 🚀  I'm currently working on [100days of design and code](http://100days.devbilly.com)
-* 🧠  I'm learning React Native and picking up Swift soon
 * 🤝  I'm open to collaborating on Anything React related and Android.
 
 ### Skills
